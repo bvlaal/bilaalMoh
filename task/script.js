@@ -1,5 +1,5 @@
 async function fetchAPI(api, params) {
-    const username = 'bvlaal'; // Replace with your GeoNames username
+    const username = 'bvlaal';
     const url = `http://api.geonames.org/${api}?${params}&username=${username}&type=json`;
     try {
         const response = await fetch(url);
