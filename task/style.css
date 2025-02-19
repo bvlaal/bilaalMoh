@@ -1,0 +1,62 @@
+button {
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkblue;
+}
+
+/* Align input boxes inline and structure layout */
+th {
+    text-align: left;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+}
+
+/* Style API Name column */
+td:first-child {
+    font-weight: bold;
+    width: 20%;
+}
+
+/* Style API Description & Inputs column */
+td:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 40%;
+}
+
+td input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Position buttons below input fields */
+button {
+    margin-top: 5px;
+}
+
+/* Style Results column */
+td:nth-child(3) {
+    width: 40%;
+}
+
+pre {
+    background: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    white-space: pre-wrap;
+}
