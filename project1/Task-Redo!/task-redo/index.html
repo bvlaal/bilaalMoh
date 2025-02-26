@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeoNames API Demo</title>
+
+</head>
+<body>
+    <h2>GeoNames API Demo</h2>
+    <table border="1">
+        <tr>
+            <th>API Name</th>
+            <th>API Description (Enter Parameters)</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td>Neighbourhood</td>
+            <td>
+                Latitude: <input type="text" id="neighLat"><br>
+                Longitude: <input type="text" id="neighLng">
+            </td>
+            <td><button onclick="fetchNeighbourhood()">Get Neighbourhood</button></td>
+        </tr>
+        <tr>
+            <td>Country Info</td>
+            <td>
+                Country Code: <input type="text" id="countryCode">
+            </td>
+            <td><button onclick="fetchCountryInfo()">Get Country Info</button></td>
+        </tr>
+        <tr>
+            <td>Timezone</td>
+            <td>
+                Latitude: <input type="text" id="tzLat"><br>
+                Longitude: <input type="text" id="tzLng">
+            </td>
+            <td><button onclick="fetchTimezone()">Get Timezone</button></td>
+        </tr>
+    </table>
+
+    <h3>Response:</h3>
+    <pre id="response"></pre>
+    <script src="library/JavaScript/scripts.js" ></script>
+    <script src="library/JavaScript/jquery-2.2.3.min.js" ></script>
+</body>
+</html>
